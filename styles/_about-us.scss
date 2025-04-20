@@ -1,0 +1,49 @@
+.about-us {
+  @extend .flexBox;
+  justify-content: center;
+  gap: 9rem;
+  @include laptop {
+    flex-direction: column;
+  }
+
+  // Image
+  &-image {
+    flex: 1;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  // Text
+  &-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h5 {
+      color: $main-color;
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+    }
+
+    h2 {
+      font-size: $h2-font;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    p {
+      color: $gray;
+      font-size: $p-font;
+      line-height: 30px;
+      font-weight: 500;
+    }
+
+    .btn {
+      width: auto;
+    }
+  }
+}
